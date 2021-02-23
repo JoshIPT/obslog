@@ -1,4 +1,4 @@
-# joshlog
+# obslog
 Implementation of a Syslog server in PHP that feeds directly into Observium because Observium is stupid. 
 
 Only basic but better than nothing.
@@ -10,10 +10,8 @@ Ensure the `require_once()` is pointing to your Observium config.php to get MySQ
 Run this in `supervisord` using a config like below:
 
 ```
-[program:joshlog]
-command=/opt/iptelco/syslog.php
+[program:obslog]
+command=/opt/obslog/obslog.php
 autostart=true
 autorestart=unexpected
 ```
-
-## I get it's a stupid name. It was a random tool for a random job. I'm not creative ok?

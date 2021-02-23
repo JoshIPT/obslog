@@ -144,10 +144,10 @@
 
                 if ($drop) {
                         //debug: print "Dropping message: {$log["message"]}\n";
-                        //debug: file_put_contents("/var/log/joshlog.log", "Dropped message: {$log["message"]}\n", FILE_APPEND);
+                        //debug: file_put_contents("/var/log/obslog.log", "Dropped message: {$log["message"]}\n", FILE_APPEND);
                 }
                 else {
-                        file_put_contents("/var/log/joshlog.log", json_encode($log)."\n", FILE_APPEND);
+                        file_put_contents("/var/log/obslog.log", json_encode($log)."\n", FILE_APPEND);
                         logToObs($log);
                 }
         }
